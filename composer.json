@@ -1,5 +1,5 @@
 {
-    "name": "nblakefriend/mailchimp-apiv3",
+    "name": "halfik/mailchimp",
     "description": "Complete PHP Wrapper for MailChimp API v3.0.",
     "type": "library",
     "keywords"  : [
