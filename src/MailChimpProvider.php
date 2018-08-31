@@ -25,13 +25,14 @@ class MailChimpProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
+
         $this->mergeConfigFrom(self::CONFIG_PATH, 'mailchimp');
 
         $this->app->singleton(MailChimp::class, function ($app) {
             return new MailChimp();
         });
 
-        $this->app->alias(Slack::class, 'slack');
+        $this->app->alias(MailChimp::class, 'mailchimp');
     }
 
     /**
