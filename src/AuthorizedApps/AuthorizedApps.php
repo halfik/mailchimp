@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\AuthorizedApps;
+namespace Halfik\MailChimp\AuthorizedApps;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class AuthorizedApps

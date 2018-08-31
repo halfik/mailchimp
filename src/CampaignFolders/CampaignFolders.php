@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\CampaignFolders;
+namespace Halfik\MailChimp\CampaignFolders;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class CampaignFolders

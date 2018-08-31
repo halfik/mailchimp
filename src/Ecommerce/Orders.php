@@ -1,6 +1,6 @@
 <?php
 
-namespace halfik\MailChimp\Ecommerce;
+namespace Halfik\MailChimp\Ecommerce;
 
 /**
  * Class Orders

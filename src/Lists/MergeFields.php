@@ -1,6 +1,6 @@
 <?php
 
-namespace halfik\MailChimp\Lists;
+namespace Halfik\MailChimp\Lists;
 
 /**
  * Class MergeFields

@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\Reports;
+namespace Halfik\MailChimp\Reports;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class Reports

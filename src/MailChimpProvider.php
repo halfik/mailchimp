@@ -1,43 +1,22 @@
 <?php
 
-namespace halfik\MailChimp;
+namespace Halfik\MailChimp;
 
-use Illuminate\Support\ServiceProvider;
 
 /**
  * Class MailChimpProvider
  * @package MailChimp
  */
-class MailChimpProvider extends ServiceProvider
+class MailChimpProvider extends \Illuminate\Support\ServiceProvider
 {
+    const CONFIG_PATH = __DIR__.'/../config/mailchimp.php';
+
     /**
      * Indicates if loading of the provider is deferred.
      *
      * @var bool
      */
-    protected $defer = false;
-
-    /**
-     * Boot the service provider.
-     */
-    public function boot()
-    {
-        $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('mailchimp.php'),
-        ], 'config');
-
-        $this->bootBindings();
-    }
-
-    /**
-     * Bind some Interfaces and implementations.
-     */
-    protected function bootBindings()
-    {
-        $this->app->singleton(\MailChimp\MailChimp::class, function ($app) {
-            return $app['halfik.mailchimp'];
-        });
-    }
+    protected $defer = true;
 
     /**
      * Register the service provider.
@@ -46,9 +25,33 @@ class MailChimpProvider extends ServiceProvider
      */
     public function register()
     {
-        $configPath = __DIR__ . '/../config/mailchimp.php';
-        $this->mergeConfigFrom($configPath, 'mailchimp');
+        $this->mergeConfigFrom(self::CONFIG_PATH, 'mailchimp');
+
+        $this->app->singleton(MailChimp::class, function ($app) {
+            return new MailChimp();
+        });
+
+        $this->app->alias(Slack::class, 'slack');
     }
 
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([self::CONFIG_PATH => config_path('mailchimp.php')], 'config');
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [MailChimp::class];
+    }
 
 }

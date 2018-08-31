@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\Conversations;
+namespace Halfik\MailChimp\Conversations;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class Conversations

@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\Batches;
+namespace Halfik\MailChimp\Batches;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class Batches

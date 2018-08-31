@@ -1,22 +1,22 @@
 <?php
 
-namespace halfik\MailChimp;
+namespace Halfik\MailChimp;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use halfik\MailChimp\AuthorizedApps\AuthorizedApps as AuthorizedApps;
-use halfik\MailChimp\Automations\Automations as Automations;
-use halfik\MailChimp\Batches\Batches as Batches;
-use halfik\MailChimp\CampaignFolders\CampaignFolders as CampaignFolders;
-use halfik\MailChimp\Campaigns\Campaigns as Campaigns;
-use halfik\MailChimp\Conversations\Conversations as Conversations;
-use halfik\MailChimp\Ecommerce\Ecommerce as Ecommerce;
-use halfik\MailChimp\FileManager\Files as FileManagerFiles;
-use halfik\MailChimp\FileManager\Folders as FileManagerFolders;
-use halfik\MailChimp\Lists\Lists as Lists;
-use halfik\MailChimp\Reports\Reports as Reports;
-use halfik\MailChimp\TemplateFolders\TemplateFolders as TemplateFolders;
-use halfik\MailChimp\Templates\Templates as Templates;
+use Halfik\MailChimp\AuthorizedApps\AuthorizedApps as AuthorizedApps;
+use Halfik\MailChimp\Automations\Automations as Automations;
+use Halfik\MailChimp\Batches\Batches as Batches;
+use Halfik\MailChimp\CampaignFolders\CampaignFolders as CampaignFolders;
+use Halfik\MailChimp\Campaigns\Campaigns as Campaigns;
+use Halfik\MailChimp\Conversations\Conversations as Conversations;
+use Halfik\MailChimp\Ecommerce\Ecommerce as Ecommerce;
+use Halfik\MailChimp\FileManager\Files as FileManagerFiles;
+use Halfik\MailChimp\FileManager\Folders as FileManagerFolders;
+use Halfik\MailChimp\Lists\Lists as Lists;
+use Halfik\MailChimp\Reports\Reports as Reports;
+use Halfik\MailChimp\TemplateFolders\TemplateFolders as TemplateFolders;
+use Halfik\MailChimp\Templates\Templates as Templates;
 
 /**
  * Class MailChimp

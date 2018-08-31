@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\Campaigns;
+namespace Halfik\MailChimp\Campaigns;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class Feedback

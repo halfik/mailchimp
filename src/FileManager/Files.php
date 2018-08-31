@@ -1,8 +1,8 @@
 <?php
 
-namespace halfik\MailChimp\FileManager;
+namespace Halfik\MailChimp\FileManager;
 
-use halfik\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
 /**
  * Class Files
