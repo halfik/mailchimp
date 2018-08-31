@@ -5,7 +5,8 @@
     "keywords"  : [
         "mailchimp",
         "api",
-        "php"
+        "php",
+        "laravel"
     ],
     "license": "MIT",
     "require": {
