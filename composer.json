@@ -1,6 +1,6 @@
 {
     "name": "halfik/mailchimp",
-    "description": "Complete PHP Wrapper for MailChimp API v3.0.",
+    "description": "Complete PHP Wrapper for MailChimp API v3.0. for Laravel 5.5+",
     "type": "library",
     "keywords"  : [
         "mailchimp",
@@ -10,19 +10,24 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.19",
-        "guzzlehttp/guzzle": "^6.0.0"
+        "guzzlehttp/guzzle": "^6.0.0",
+        "laravel/framework": "^5.5"
     },
     "autoload": {
         "psr-4": {
-            "MailChimp\\": "src/"
+            "Halfik\\MailChimp\\": "src/"
         }
     },
-    "homepage": "https://github.com/nblakefriend/MailChimp-API3.0-Wrapper.git",
+    "homepage": "https://github.com/halfik/mailchimp",
     "authors": [
        {
            "name": "Nathan Friend",
            "email": "nblakefriend@gmail.com"
-       }
+       },
+        {
+            "name": "halfik",
+            "email": "halfik@pm.me"
+        }
    ],
    "minimum-stability": "dev"
 }

@@ -1,9 +1,13 @@
 <?php
 
-namespace MailChimp\FileManager;
+namespace Halfik\MailChimp\FileManager;
 
-use MailChimp\MailChimp as MailChimp;
+use Halfik\MailChimp as MailChimp;
 
+/**
+ * Class Folders
+ * @package halfik\MailChimp\FileManager
+ */
 class Folders extends MailChimp
 {
 

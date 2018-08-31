@@ -1,6 +1,11 @@
 <?php
-namespace MailChimp\Lists;
 
+namespace Halfik\MailChimp\Lists;
+
+/**
+ * Class MergeFields
+ * @package halfik\MailChimp\Lists
+ */
 class MergeFields extends Lists
 {
 

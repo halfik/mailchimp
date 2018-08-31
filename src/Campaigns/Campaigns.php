@@ -1,10 +1,15 @@
 <?php
-namespace MailChimp\Campaigns;
 
-use MailChimp\MailChimp as MailChimp;
-use MailChimp\Campaigns\Content as Content;
-use MailChimp\Campaigns\Feedback as Feedback;
+namespace Halfik\MailChimp\Campaigns;
 
+use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\Campaigns\Content as Content;
+use Halfik\MailChimp\Campaigns\Feedback as Feedback;
+
+/**
+ * Class Campaigns
+ * @package halfik\MailChimp\Campaigns
+ */
 class Campaigns extends MailChimp
 {
 
@@ -85,7 +90,7 @@ class Campaigns extends MailChimp
      *          ["title"]                   string      The title of the campaign.
      *          ["from_name"]               string      REQUIRED The ‘from’ name on the campaign (not an email address).
      *          ["reply_to"]                string      REQUIRED The reply-to email address for the campaign.
-     *          ["use_conversation"]        boolean     Use MailChimp Conversation feature to manage out-of-office replies.
+     *          ["use_conversation"]        boolean     use Halfik\MailChimp Conversation feature to manage out-of-office replies.
      *          ["to_name"]                 string      The campaign’s custom ‘To’ name. Typically the first name merge field.
      *          ["folder_id"]               string      If the campaign is listed in a folder, the id for that folder.
      *          ["authenticate"]            boolean     Whether MailChimp authenticated the campaign. Defaults to true.

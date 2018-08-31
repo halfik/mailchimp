@@ -1,6 +1,11 @@
 <?php
-namespace MailChimp\Lists;
 
+namespace Halfik\MailChimp\Lists;
+
+/**
+ * Class SignupForms
+ * @package halfik\MailChimp\Lists
+ */
 class SignupForms extends Lists
 {
 

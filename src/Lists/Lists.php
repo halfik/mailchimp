@@ -1,14 +1,19 @@
 <?php
-namespace MailChimp\Lists;
 
-use MailChimp\MailChimp as MailChimp;
-use MailChimp\Lists\Interests as Interests;
-use MailChimp\Lists\Members as Members;
-use MailChimp\Lists\MergeFields as MergeFields;
-use MailChimp\Lists\Segments as Segments;
-use MailChimp\Lists\SignupForms as SignupForms;
-use MailChimp\Lists\Webhooks as Webhooks;
+namespace Halfik\MailChimp\Lists;
 
+use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\Lists\Interests as Interests;
+use Halfik\MailChimp\Lists\Members as Members;
+use Halfik\MailChimp\Lists\MergeFields as MergeFields;
+use Halfik\MailChimp\Lists\Segments as Segments;
+use Halfik\MailChimp\Lists\SignupForms as SignupForms;
+use Halfik\MailChimp\Lists\Webhooks as Webhooks;
+
+/**
+ * Class Lists
+ * @package halfik\MailChimp\Lists
+ */
 class Lists extends MailChimp
 {
     /**

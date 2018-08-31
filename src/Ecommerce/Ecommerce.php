@@ -1,12 +1,17 @@
 <?php
-namespace MailChimp\Ecommerce;
 
-use MailChimp\MailChimp as MailChimp;
-use MailChimp\Ecommerce\Carts as Carts;
-use MailChimp\Ecommerce\Customers as Customers;
-use MailChimp\Ecommerce\Orders as Orders;
-use MailChimp\Ecommerce\Products as Products;
+namespace Halfik\MailChimp\Ecommerce;
 
+use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\Ecommerce\Carts as Carts;
+use Halfik\MailChimp\Ecommerce\Customers as Customers;
+use Halfik\MailChimp\Ecommerce\Orders as Orders;
+use Halfik\MailChimp\Ecommerce\Products as Products;
+
+/**
+ * Class Ecommerce
+ * @package halfik\MailChimp\Ecommerce
+ */
 class Ecommerce extends MailChimp
 {
 

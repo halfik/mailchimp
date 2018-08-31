@@ -1,8 +1,13 @@
 <?php
-namespace MailChimp\AuthorizedApps;
 
-use MailChimp\MailChimp as MailChimp;
+namespace Halfik\MailChimp\AuthorizedApps;
 
+use Halfik\MailChimp as MailChimp;
+
+/**
+ * Class AuthorizedApps
+ * @package halfik\MailChimp\AuthorizedApps
+ */
 class AuthorizedApps extends MailChimp
 {
 
