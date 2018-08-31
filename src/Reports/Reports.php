@@ -1,9 +1,13 @@
 <?php
 
-namespace MailChimp\Reports;
+namespace halfik\MailChimp\Reports;
 
-use MailChimp\MailChimp as MailChimp;
+use halfik\MailChimp as MailChimp;
 
+/**
+ * Class Reports
+ * @package halfik\MailChimp\Reports
+ */
 class Reports extends MailChimp
 {
 

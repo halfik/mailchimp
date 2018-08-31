@@ -1,6 +1,11 @@
 <?php
-namespace MailChimp\Ecommerce;
 
+namespace halfik\MailChimp\Ecommerce;
+
+/**
+ * Class Products
+ * @package halfik\MailChimp\Ecommerce
+ */
 class Products extends Ecommerce
 {
 

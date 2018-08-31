@@ -1,8 +1,13 @@
 <?php
-namespace MailChimp\Automations;
 
-use MailChimp\MailChimp as MailChimp;
+namespace halfik\MailChimp\Automations;
 
+use halfik\MailChimp as MailChimp;
+
+/**
+ * Class Automations
+ * @package halfik\MailChimp\Automations
+ */
 class Automations extends MailChimp
 {
 

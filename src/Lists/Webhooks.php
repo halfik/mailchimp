@@ -1,6 +1,11 @@
 <?php
-namespace MailChimp\Lists;
 
+namespace halfik\MailChimp\Lists;
+
+/**
+ * Class Webhooks
+ * @package halfik\MailChimp\Lists
+ */
 class Webhooks extends Lists
 {
     /**

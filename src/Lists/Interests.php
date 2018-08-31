@@ -1,6 +1,11 @@
 <?php
-namespace MailChimp\Lists;
 
+namespace halfik\MailChimp\Lists;
+
+/**
+ * Class Interests
+ * @package halfik\MailChimp\Lists
+ */
 class Interests extends Lists
 {
 

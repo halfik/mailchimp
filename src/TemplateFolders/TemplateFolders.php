@@ -1,8 +1,13 @@
 <?php
-namespace MailChimp\TemplateFolders;
 
-use MailChimp\MailChimp as MailChimp;
+namespace halfik\MailChimp\TemplateFolders;
 
+use halfik\MailChimp as MailChimp;
+
+/**
+ * Class TemplateFolders
+ * @package halfik\MailChimp\TemplateFolders
+ */
 class TemplateFolders extends MailChimp
 {
 

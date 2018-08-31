@@ -1,23 +1,27 @@
 <?php
-namespace MailChimp;
+
+namespace halfik\MailChimp;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use MailChimp\AuthorizedApps\AuthorizedApps as AuthorizedApps;
-use MailChimp\Automations\Automations as Automations;
-use MailChimp\Batches\Batches as Batches;
-use MailChimp\CampaignFolders\CampaignFolders as CampaignFolders;
-use MailChimp\Campaigns\Campaigns as Campaigns;
-use MailChimp\Conversations\Conversations as Conversations;
-use MailChimp\Ecommerce\Ecommerce as Ecommerce;
-use MailChimp\FileManager\Files as FileManagerFiles;
-use MailChimp\FileManager\Folders as FileManagerFolders;
-use MailChimp\Lists\Lists as Lists;
-use MailChimp\Reports\Reports as Reports;
-use MailChimp\TemplateFolders\TemplateFolders as TemplateFolders;
-use MailChimp\Templates\Templates as Templates;
+use halfik\MailChimp\AuthorizedApps\AuthorizedApps as AuthorizedApps;
+use halfik\MailChimp\Automations\Automations as Automations;
+use halfik\MailChimp\Batches\Batches as Batches;
+use halfik\MailChimp\CampaignFolders\CampaignFolders as CampaignFolders;
+use halfik\MailChimp\Campaigns\Campaigns as Campaigns;
+use halfik\MailChimp\Conversations\Conversations as Conversations;
+use halfik\MailChimp\Ecommerce\Ecommerce as Ecommerce;
+use halfik\MailChimp\FileManager\Files as FileManagerFiles;
+use halfik\MailChimp\FileManager\Folders as FileManagerFolders;
+use halfik\MailChimp\Lists\Lists as Lists;
+use halfik\MailChimp\Reports\Reports as Reports;
+use halfik\MailChimp\TemplateFolders\TemplateFolders as TemplateFolders;
+use halfik\MailChimp\Templates\Templates as Templates;
 
-
+/**
+ * Class MailChimp
+ * @package halfik
+ */
 class MailChimp
 {
 
@@ -67,9 +71,7 @@ class MailChimp
      */
     private static function getConfig()
     {
-        $path_to_config = self::$config;
-        $config = parse_ini_file($path_to_config, true);
-        return $config;
+        return config('mailchimp');
     }
 
     /**

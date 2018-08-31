@@ -1,8 +1,13 @@
 <?php
-namespace MailChimp\Campaigns;
 
-use MailChimp\MailChimp as MailChimp;
+namespace halfik\MailChimp\Campaigns;
 
+use halfik\MailChimp as MailChimp;
+
+/**
+ * Class Content
+ * @package halfik\MailChimp\Campaigns
+ */
 class Content extends MailChimp
 {
 
