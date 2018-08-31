@@ -2,7 +2,7 @@
 
 namespace Halfik\MailChimp\Ecommerce;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 use Halfik\MailChimp\Ecommerce\Carts as Carts;
 use Halfik\MailChimp\Ecommerce\Customers as Customers;
 use Halfik\MailChimp\Ecommerce\Orders as Orders;
@@ -10,7 +10,7 @@ use Halfik\MailChimp\Ecommerce\Products as Products;
 
 /**
  * Class Ecommerce
- * @package halfik\MailChimp\Ecommerce
+ * @package Halfik\MailChimp\Ecommerce
  */
 class Ecommerce extends MailChimp
 {

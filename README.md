@@ -1,51 +1,55 @@
 # MailChimp API v3.0 PHP Wrapper
 
 PHP wrapper for the MailChimp API v 3.0.
+Package is fork of *https://github.com/nblakefriend/MailChimp-API3.0-Wrapper*
 
 ### Dependencies
 - GuzzleHttp
 - PHP > 5.4
+- Laravel >= 5.5
 
 *Project still in the works. More documentation to come*
 
 ### Installing
-Using Composer: `composer require nblakefriend/mailchimp-apiv3`
+Add this to your application composer.json:
+
+     "repositories": [
+            {
+                "type": "vcs",
+                "url": "http://github.com/halfik/mailchimp"
+            }
+        ],
+         "require": {
+                "halfik/mailchimp": "dev-mas"
+            },
+        
 
 ### Getting Started
-When downloading from composer *(recommended)*:
-1. In `vendor/nblakefriend/mailchimp-apiv3/src` create `config.ini` file with structure:
+1. Add provider to your app.php config file:
 
-```
-[api_keys]
-key1[api_keys] = "yourmcapikey-usx"
-key1[active] = true
-```
+       \Halfik\MailChimp\MailChimpProvider::class,
+       
+2. And publish config:
 
-Multiple accounts can be configured in this config file.
+     php artisan vendor:publish --tag=config
+       
 
-```
-[api_keys]
-key1[api_keys] = "yourmcapikey-usx"
-key1[active] = true
+3. You should set your mailchimp api key in .env
 
-key2[api_keys] = "yourmcapikey-usx"
-key2[active] = false
-```
+    MAILCHIMP_APIKEY=key_here
+    
+4. You can also set default list by adding it to .env
 
-Whichever key[active] is true will be used.
-
-***config.ini is excluded in the .gitignore file. Make sure this is not changed!***
-
-2. Instantiate with `$mc = new MailChimp\MailChimp`;
-3. `print_r($mc->getAccountInfo());` should return the MailChimp API Root call.
-
-If downloading this repo directly:
-1. From your command line, navigate to the MailChimp folder and run `composer update` to download Dependencies.
-2. Add the package to your add `require_once 'MailChimp/vendor/autoload.php'` in your file.
-3. Instantiate with `$mc = new MailChimp\MailChimp`;
-4. `print_r($mc->getAccountInfo());` should return the MailChimp API Root call.
+    MAILCHIMP_LIST_ID
+    
+You can add more list to config file
 
 ### Using the Wrapper
+
+You can you IoC to create MailChimp instance:
+
+     $mc = \App::make('halfik.mailchimp')
+
 Each MailChimp collections *(lists, campaigns, e-commerce etc.)* is accessed using a method found at the bottom of the `MailChimp.php` file that instantiates the collection's class.
 
 **For example:**

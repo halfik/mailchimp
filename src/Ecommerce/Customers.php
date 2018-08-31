@@ -4,7 +4,7 @@ namespace Halfik\MailChimp\Ecommerce;
 
 /**
  * Class Customers
- * @package halfik\MailChimp\Ecommerce
+ * @package Halfik\MailChimp\Ecommerce
  */
 class Customers extends Ecommerce
 {

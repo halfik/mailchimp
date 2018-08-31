@@ -2,7 +2,7 @@
 
 namespace Halfik\MailChimp\Lists;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 use Halfik\MailChimp\Lists\Interests as Interests;
 use Halfik\MailChimp\Lists\Members as Members;
 use Halfik\MailChimp\Lists\MergeFields as MergeFields;
@@ -12,7 +12,7 @@ use Halfik\MailChimp\Lists\Webhooks as Webhooks;
 
 /**
  * Class Lists
- * @package halfik\MailChimp\Lists
+ * @package Halfik\MailChimp\Lists
  */
 class Lists extends MailChimp
 {

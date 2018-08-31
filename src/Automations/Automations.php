@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\Automations;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class Automations
- * @package halfik\MailChimp\Automations
+ * @package Halfik\MailChimp\Automations
  */
 class Automations extends MailChimp
 {

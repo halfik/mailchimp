@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\FileManager;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class Files
- * @package halfik\MailChimp\FileManager
+ * @package Halfik\MailChimp\FileManager
  */
 class Files extends MailChimp
 {

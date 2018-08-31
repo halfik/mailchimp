@@ -4,7 +4,7 @@ namespace Halfik\MailChimp\Lists;
 
 /**
  * Class Interests
- * @package halfik\MailChimp\Lists
+ * @package Halfik\MailChimp\Lists
  */
 class Interests extends Lists
 {

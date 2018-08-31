@@ -7,4 +7,7 @@ return [
             'api_key' =>  env('MAILCHIMP_APIKEY'),
         ],
     ],
+    'lists' => [
+        'default' => env('MAILCHIMP_LIST_ID'),
+    ],
 ];

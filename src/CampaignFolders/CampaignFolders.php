@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\CampaignFolders;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class CampaignFolders
- * @package halfik\MailChimp\CampaignFolders
+ * @package Halfik\MailChimp\CampaignFolders
  */
 class CampaignFolders extends MailChimp
 {

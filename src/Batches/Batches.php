@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\Batches;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class Batches
- * @package halfik\MailChimp\Batches
+ * @package Halfik\MailChimp\Batches
  */
 class Batches extends MailChimp
 {

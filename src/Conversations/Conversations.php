@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\Conversations;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class Conversations
- * @package halfik\MailChimp\Conversations
+ * @package Halfik\MailChimp\Conversations
  */
 class Conversations extends MailChimp
 {

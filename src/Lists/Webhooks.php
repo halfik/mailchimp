@@ -4,7 +4,7 @@ namespace Halfik\MailChimp\Lists;
 
 /**
  * Class Webhooks
- * @package halfik\MailChimp\Lists
+ * @package Halfik\MailChimp\Lists
  */
 class Webhooks extends Lists
 {

@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\AuthorizedApps;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class AuthorizedApps
- * @package halfik\MailChimp\AuthorizedApps
+ * @package Halfik\MailChimp\AuthorizedApps
  */
 class AuthorizedApps extends MailChimp
 {

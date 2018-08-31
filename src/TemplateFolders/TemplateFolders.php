@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\TemplateFolders;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class TemplateFolders
- * @package halfik\MailChimp\TemplateFolders
+ * @package Halfik\MailChimp\TemplateFolders
  */
 class TemplateFolders extends MailChimp
 {

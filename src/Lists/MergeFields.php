@@ -4,7 +4,7 @@ namespace Halfik\MailChimp\Lists;
 
 /**
  * Class MergeFields
- * @package halfik\MailChimp\Lists
+ * @package Halfik\MailChimp\Lists
  */
 class MergeFields extends Lists
 {

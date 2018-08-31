@@ -20,7 +20,7 @@ use Halfik\MailChimp\Templates\Templates as Templates;
 
 /**
  * Class MailChimp
- * @package halfik
+ * @package Halfik
  */
 class MailChimp
 {
@@ -87,6 +87,17 @@ class MailChimp
                 break;
             }
         }
+    }
+
+    /**
+     * Get specific list id
+     * @param $name
+     * @return mixed
+     */
+    public function getListId($name = 'default')
+    {
+        $config = self::getConfig();
+        return array_key_exists($name, $config['lists']) ? $config['lists'][$name] : null;
     }
 
     /**

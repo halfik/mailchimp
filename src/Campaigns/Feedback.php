@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\Campaigns;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class Feedback
- * @package halfik\MailChimp\Campaigns
+ * @package Halfik\MailChimp\Campaigns
  */
 class Feedback extends MailChimp
 {

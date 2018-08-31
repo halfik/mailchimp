@@ -4,7 +4,7 @@ namespace Halfik\MailChimp\Lists;
 
 /**
  * Class Segments
- * @package halfik\MailChimp\Lists
+ * @package Halfik\MailChimp\Lists
  */
 class Segments extends Lists
 {

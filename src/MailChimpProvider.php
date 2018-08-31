@@ -28,7 +28,7 @@ class MailChimpProvider extends \Illuminate\Support\ServiceProvider
 
         $this->mergeConfigFrom(self::CONFIG_PATH, 'mailchimp');
 
-        $this->app->singleton(MailChimp::class, function ($app) {
+        $this->app->singleton('halfik.mailchimp', function ($app) {
             return new MailChimp();
         });
 

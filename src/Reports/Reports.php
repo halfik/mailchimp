@@ -2,11 +2,11 @@
 
 namespace Halfik\MailChimp\Reports;
 
-use Halfik\MailChimp as MailChimp;
+use Halfik\MailChimp\MailChimp as MailChimp;
 
 /**
  * Class Reports
- * @package halfik\MailChimp\Reports
+ * @package Halfik\MailChimp\Reports
  */
 class Reports extends MailChimp
 {
