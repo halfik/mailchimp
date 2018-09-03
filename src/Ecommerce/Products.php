@@ -70,7 +70,7 @@ class Products extends Ecommerce
      */
     public function updateProduct($store_id, $product_id, array $data = [])
     {
-        return self::execute("PUT", "ecommerce/stores/{$store_id}/products/{$product_id}", $data);
+        return self::execute("PATCH", "ecommerce/stores/{$store_id}/products/{$product_id}", $data);
     }
 
     /**
