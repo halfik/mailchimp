@@ -108,6 +108,7 @@ class MailChimp
      */
     private static function setData($method, array $data = [])
     {
+        $params = [];
         // TODO: consider sanitizing incoming data?
         foreach ($data as $key => $value) {
             // Set query parameters if method is GET
@@ -125,6 +126,12 @@ class MailChimp
         return $params;
     }
 
+    /**
+     * @param $method
+     * @param $url
+     * @param array $data
+     * @return mixed
+     */
     protected static function execute($method, $url, array $data = [])
     {
         if ($data) {
@@ -135,11 +142,7 @@ class MailChimp
 
         $status_code = $response->getStatusCode();
         $response_body = json_decode($response->getBody()->getContents());
-        // if ($status_code === 200 || $status_code === 204) {
-            // return $response_body;
-        // } else {
 
-        // }
         return $response_body;
     }
 

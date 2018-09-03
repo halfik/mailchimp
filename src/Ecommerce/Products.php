@@ -61,6 +61,19 @@ class Products extends Ecommerce
     }
 
     /**
+     *  Idate a product.
+     *
+     * @param string $store_id
+     * @param string $product_id
+     * @param array $data
+     * @return object
+     */
+    public function updateProduct($store_id, $product_id, array $data = [])
+    {
+        return self::execute("PUT", "ecommerce/stores/{$store_id}/products/{$product_id}", $data);
+    }
+
+    /**
      * Get information about a product’s variants.
      *
      * @param string $store_id
