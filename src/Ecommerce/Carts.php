@@ -77,7 +77,7 @@ class Carts extends Ecommerce
 
     public function updateCart($store_id, $cart_id, array $data = [])
     {
-        return self::excecute("PATCH", "ecommerce/stores/{$store_id}/carts/{$cart_id}", $data);
+        return self::execute("PATCH", "ecommerce/stores/{$store_id}/carts/{$cart_id}", $data);
     }
 
     /**
